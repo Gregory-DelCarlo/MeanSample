@@ -5,7 +5,7 @@ export const collections: {
     employees?: mongodb.Collection<Employee>; // casts employees to the Employees interface
 } = {} // returns all the collections in a pojo
 
-export async function connectToDatabse(uri: string) {
+export async function connectToDatabase(uri: string) {
     const client = new mongodb.MongoClient(uri); // get the correct mongodb cluster
     await client.connect(); // await the connection to the client use because connect is async
 
