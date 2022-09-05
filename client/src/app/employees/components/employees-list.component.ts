@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Employee } from '../employee';
-import { EmployeeService } from '../employee.service';
+import { EmployeeService } from '../services/employee.service';
 
+//generated using: ng g component employee-list
 @Component({
   selector: 'app-employees-list', // this is the html tag that the component ill be rendered on
   // this is where you write your html file and can embed ts
