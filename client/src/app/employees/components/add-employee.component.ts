@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee } from '../employee';
 import { EmployeeService } from '../services/employee.service';
@@ -13,7 +13,7 @@ import { EmployeeService } from '../services/employee.service';
   styles: [
   ]
 })
-export class AddEmployeeComponent implements OnInit {
+export class AddEmployeeComponent {
 
   constructor(
     private router: Router,
